@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Entry form">
+        <lightning-input label="Company name" value = {cname} onchange={handleChange}> </lightning-input>
+        <div class="slds-p-bottom_xxx-small"></div>
+        <lightning-input type = "checkbox" label="are you an employee" onchange={handleCheckbox}> </lightning-input>
+    <template if:true={employee}>
+        yes, I am an employee in {cname}.
+    </template>
+    </lightning-card>
+</template>

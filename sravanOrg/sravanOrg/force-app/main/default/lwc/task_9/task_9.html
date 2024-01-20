@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="search contacts">
+        <lightning-input label="name" value = {name} onchange={handleChange}> </lightning-input>
+        <div class="slds-p-bottom_xxx-small"></div><lightning-datatable if:true={clist.data}
+        data={clist.data}
+        columns={columns}
+        key-field="name"></lightning-datatable>
+    </lightning-card>
+</template>

@@ -1,0 +1,21 @@
+<template>
+<lightning-card title="practice session4">
+    <lightning-layout>
+    <lightning-layout-item>
+    <template for:each={list_name} for:item="value">
+     <p key={value}>{value}</p>
+    </template>
+    <template for:each={list_O} for:item="obj">
+        <div key={obj.id}>{obj.name}</div>
+    </template>
+    <template if:true={blncheck}>
+        <p> sravan</p>
+    </template>
+    <template if:false={blncheck}>
+            <p>not sravan</p>   
+        </template>
+</lightning-layout-item>
+</lightning-layout></lightning-card>>
+</template>
+
+ 

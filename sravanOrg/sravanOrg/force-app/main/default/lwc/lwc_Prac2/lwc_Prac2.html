@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Greater of 3 numbers">
+        <lightning-input label="enter first number" value = {fnum} onchange={handleChange1}> </lightning-input>
+        <div class="slds-p-bottom_xxx-small"></div>
+        <lightning-input label="enter second number" value = {snum} onchange={handleChange2}> </lightning-input>
+        <div class="slds-p-bottom_xxx-small"></div>
+        <lightning-input label="enter third number" value = {tnum} onchange={handleChange3}> </lightning-input>
+        <div class="slds-p-bottom_xxx-small"></div>
+        <lightning-button variant="brand" label="Calculate"  onclick={handleCalculate} class="slds-m-left_x-small"></lightning-button>
+        <lightning-button variant="brand-outline" label="Clear"  onclick={handleClear} class="slds-m-left_x-small"></lightning-button>
+
+    </lightning-card>
+</template>

@@ -1,0 +1,13 @@
+<template>
+        <lightning-card title="application">
+            <lightning-input label="employee name" value = {cname} onchange={handleChange}> </lightning-input>
+            <lightning-input type = "checkbox" label="Is this your name ?" onchange={handleCheckbox}> </lightning-input>
+            <template if:true={bln}>
+            <p>Hello,My name is {cname}.</p>
+            </template>
+            <template if:false={bln}>
+                <p>Enter correct name please!</p>
+                </template>
+            <div class="slds-p-bottom_xxx-small"></div>
+        </lightning-card>           
+</template>

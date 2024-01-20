@@ -1,0 +1,15 @@
+<template>
+    <lightning-carousel>
+        <template for:each={doctors} for:item="doctor">
+            <lightning-carousel-image key={doctor.id}
+                                     src={doctor.imageURL}
+                                     header={doctor.name}
+                                     description={doctor.details}
+                                     alternative-text={doctor.name}
+                                     href={doctor.recordURL} target="_blank">
+            </lightning-carousel-image>
+        </template>
+    </lightning-carousel>
+</template>
+
+

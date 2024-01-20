@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Account Details 2" >  
+        <div style="display: flex; gap: 5px; justify-content: flex-end;flex-direction: row; padding-right: 5px;">    
+          
+        <lightning-button label="Add" title="Click me" onclick={handleAdd} variant="brand" icon-name='utility:add'></lightning-button>
+        <lightning-button label="Remove" title="Click me" onclick={handleRemove} variant="destructive" icon-name='utility:delete'></lightning-button></div>
+        <div style="padding-top: 8px;"><lightning-datatable    
+            key-field="Id"
+            data={accountData}
+            columns={columns}
+            onrowaction={handleRowAction}>
+            
+        </lightning-datatable></div>
+        
+    </lightning-card>
+</template>
