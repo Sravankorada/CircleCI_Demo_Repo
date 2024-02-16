@@ -10,7 +10,7 @@ public class maintanenceTriggerHandler {
         list<resource__c> rlist = [select id,status__c from resource__c where id IN:id2];
         for(resource__c rl : rlist){
             rl.status__c ='Performing Maintenance';
-                
+                //
                 
             }
         }
